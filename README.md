@@ -1,1 +1,1 @@
-# JavaSilverPractice
+# OracleJavaPractice

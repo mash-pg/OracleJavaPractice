@@ -3,7 +3,7 @@ package test100;
 public class TestGit {
 
 	public static void main(String[] args) {
-		System.out.println("test1234");
+		System.out.println("testuhohohho");
 	}
 
 }

@@ -1,4 +1,4 @@
-package silver.lesson7.practice7;
+package silver.lesson7.practice07;
 
 public interface A {
 	

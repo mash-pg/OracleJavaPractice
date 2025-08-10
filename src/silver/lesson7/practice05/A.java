@@ -5,5 +5,6 @@ public interface A {
 	default String sample() {
 		return "A";
 	}
+	
 
 }

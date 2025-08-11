@@ -5,7 +5,7 @@ public class Sample {
 	private String name;
 	public Sample(int num,String name) {
 		this.num = num;
-		this.name = name;
+		this.setName(name);
 	}
 	
 	public boolean equals(Object obj) {
@@ -19,5 +19,13 @@ public class Sample {
 		}
 		
 		return false;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 }

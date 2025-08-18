@@ -1,5 +1,7 @@
 package test.test4;
 
-public abstract class A {
-	public abstract int test();
+public interface A {
+	default void sample() {
+		System.out.println("sample");
+	}
 }

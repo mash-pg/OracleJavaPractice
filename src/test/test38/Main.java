@@ -1,12 +1,14 @@
-package test.test4;
+package test.test38;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		B a = new B();
-		a.test();
-		a.sample();
+		A a = new A() {
+			public int test() {
+				return 1;
+			}
+		};
 	}
 
 }

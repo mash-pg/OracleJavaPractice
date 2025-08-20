@@ -1,15 +1,19 @@
-import java.util.function.Consumer;
 
 public class Main {
 	public static void main(String[] args) {
-		String str;
-		str = "初音ウホ";
-		test(str);
+		
+		String[] array = {"A","B"};
+		//System.out.println(array[1].length());
+		int i = 0;
+		while (i < array.length) {
+			int j = 0;
+			do {
+				++j;
+			}while(j < array[i].length());
+			System.out.println(array[i] + " : " + j);
+			i++;
+		}
+
 	}
 	
-	private static void test(String str) {
-		System.out.println(str);
-		int s = (int) Math.round(Math.pow(1.1, 2));
-		System.out.println(s);
-	}
 }

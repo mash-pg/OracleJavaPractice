@@ -1,29 +1,33 @@
-
+class Sample{
+	public Sample(int a){
+		
+	}
+	protected Sample(String b){
+		
+	}
+}
 
 public class Main {
-	public static void main(String[] args) {
-		int a = 0;
-		
-		switch(a) {
+    public static void main(String... args) {
 
-		case 1:
-			System.out.println("1");
+        // 文字列の比較
+        String str1 = "String";
+        String str2 = new String("String");
+        String str3 = str1.intern();
 
+        // str2は新しくインスタンスを生成しているので、str1と参照先は異なるのでfalse
+        System.out.println("str1 == str2 : " + (str1 == str2));
 
-		case 2:
-			System.out.println("2");
+        // 文字列の比較は同じ文字なので、equalsメソッドでの比較はtrue
+        System.out.println("str1.equals(str2) : " + str1.equals(str2));
 
-			
-		case 3:
-			System.out.println("3");
-			
-		case 4:
-			System.out.println("4");
-		default:
-			System.out.println("other");
+        // internメソッドは既にプールされている文字列を参照するためfalse
+        System.out.println("str2 == str3 : " + (str2 == str3));
 
-		}
+        // したがって、str1との比較ではtrue
+        System.out.println("str1 == str3 : " + (str1 == str3));
 
-	}
-	
+        // もちろんequalsでの比較はtrue
+        System.out.println("str2.equals(str3) : " + str2.equals(str3));
+    }
 }

@@ -1,17 +1,27 @@
 
+
 public class Main {
 	public static void main(String[] args) {
+		int a = 0;
 		
-		String[] array = {"A","B"};
-		//System.out.println(array[1].length());
-		int i = 0;
-		while (i < array.length) {
-			int j = 0;
-			do {
-				++j;
-			}while(j < array[i].length());
-			System.out.println(array[i] + " : " + j);
-			i++;
+		switch(a) {
+
+		case 1:
+			System.out.println("1");
+
+
+		case 2:
+			System.out.println("2");
+
+			
+		case 3:
+			System.out.println("3");
+			
+		case 4:
+			System.out.println("4");
+		default:
+			System.out.println("other");
+
 		}
 
 	}
